@@ -1,0 +1,74 @@
+<div class="formulario-contacto">
+    <fieldset>
+        <div>
+            <span id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblMessage"></span>
+        </div>
+        <div>
+            <label for="txtNombre" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblNombre">Nombre (*)</label>
+            <span id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_rfvNombre" class="ErrorValidator" style="display:none;">Campo obligatorio</span>
+            <input name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$txtNombre" type="text" id="txtNombre">
+        </div>
+        <!-- Apellidos -->
+        <div>
+            <label for="txtApellidos" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblApellidos">Apellidos (*)</label>
+            <span id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_rfvApellidos" class="ErrorValidator" style="display:none;">Campo obligatorio</span>
+            <input name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$txtApellidos" type="text" id="txtApellidos">
+        </div>
+        <!-- Correo eléctronico -->
+        <div>
+            <label for="txtMail" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblMail">Correo electrónico (*)</label>
+            <span id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_rfvMail" class="ErrorValidator" style="display:none;">Campo obligatorio</span>
+            <input name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$txtMail" type="text" id="txtMail">
+        </div>
+        <!-- Nacionalidad -->
+        <div>
+            <label for="txtNacionalidad" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblNacionalidad">Nacionalidad (*)</label>
+            <span id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_rfvNacionalidad" class="ErrorValidator" style="display:none;">Campo obligatorio</span>
+            <input name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$txtNacionalidad" type="text" id="txtNacionalidad">
+        </div>
+        <!-- Dirección -->
+        <div>
+            <label for="txtDireccion" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblDireccion">Dirección</label>
+            <input name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$txtDireccion" type="text" id="txtDireccion">
+        </div>
+        <!-- Población -->
+        <div>
+            <label for="txtPoblacion" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblPoblacion">Población</label>
+            <input name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$txtPoblacion" type="text" id="txtPoblacion">
+        </div>
+        <!-- CP -->
+        <div class="c6 first">
+            <label for="txtCodPostal" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblCodPostal">Código Postal</label>
+            <input name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$txtCodPostal" type="text" maxlength="6" id="txtCodPostal">
+        </div>
+        <!-- Teléfono -->
+        <div class="c6 last">
+            <label for="txtTelefono" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblTelefono">Teléfono (*)</label>
+            <span id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_rfvTelefono" class="ErrorValidator" style="display:none;">Campo obligatorio</span>
+            <input name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$txtTelefono" type="text" maxlength="15" id="txtTelefono">
+        </div>
+        
+        <!-- Adjuntar -->
+        <div>
+            <label for="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_fuAttachCV" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblAdjuntarCV">Adjuntar CV <span class="small-text">(sólamente en formato PDF)</span></label>
+            <input type="file" name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$fuAttachCV" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_fuAttachCV" accept="pdf/*"  class="form-file">
+            <span id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblFormatoIncorrecto" class="ErrorValidator"></span>
+        </div>
+        <div>
+            <label for="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_txtComentarios" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblComentarios">Comentarios</label>
+            <textarea name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$txtComentarios" rows="2" cols="20" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_txtComentarios"></textarea>
+        </div>
+        <!-- Política de privacidad -->
+        <div>
+            <label class="check" for="checkbox">
+                <input name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$checkbox" type="checkbox" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_checkbox" class="checkbox">
+                    <span id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_spanPolitica" class="politica-privacidad">Acepto la <a class="modalLink" href="#">Política de Privacidad</a></span>
+            </label>
+            <span id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_lblPoliticaObligatoria" class="ErrorValidator"></span>
+        </div>
+        <!-- Enviar -->
+        <div>
+            <input type="submit" name="ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$btnEnviar" value="Enviar" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$plcMain$rptFormCV$ctl00$ctl00$wucFormCV$btnEnviar&quot;, &quot;&quot;, true, &quot;Send&quot;, &quot;&quot;, false, false))" id="ctl00_plcMain_rptFormCV_ctl00_ctl00_wucFormCV_btnEnviar" class="form-submit">
+        </div>
+    </fieldset>
+</div>

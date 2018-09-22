@@ -1,0 +1,22 @@
+$(document).ready(function(){
+			// attempt to prevent code from being seen if browser lets us do so
+			var disabledKeys = [123,"17,85",117,85];
+			$(document).keydown(function(e){
+			if(e.keyCode==disabledKeys[0]||e.keyCode.toString()==disabledKeys[1]) {
+			 //alert("Code inspection has been disabled.");
+			 return false;
+			}
+			if(e.keyCode==disabledKeys[2]||e.keyCode.toString()==disabledKeys[3]) {
+			 //alert("Code inspection has been disabled.");
+			 return false;
+			}
+			});
+			$(document).mousedown(function(e){
+			 //alert("Right-clicking disabled. Code inspection not permitted.");
+			 return false;
+			});
+			$(document).on("contextmenu",function(e){
+			 //alert("Context menu disabled. Code inspection not permitted.");
+			});	
+			document.oncontextmenu = function(){return false}
+		});
